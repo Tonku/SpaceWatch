@@ -57,7 +57,7 @@ class AstronautDetailsViewModel: AstronautDetailsViewModelProtocol {
     }
     
     var dateOfBirth: String {
-        astronaut.dateOfBirth
+        "Born: " + (astronaut.dateOfBirth.convertToFormattedDate() ?? "Unknown")
     }
     
     init(astronaut: AstronautDetails) {

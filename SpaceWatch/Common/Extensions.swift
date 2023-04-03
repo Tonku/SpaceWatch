@@ -13,3 +13,21 @@ extension UIFont {
         return UIFont(descriptor: descriptor, size: 0)
     }
 }
+
+extension String {
+    func convertToDate() -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        return dateFormatter.date(from: self)
+    }
+
+    func convertToFormattedDate() -> String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d, MMMM, yyyy"
+        dateFormatter.locale = Locale(identifier: "en_US")
+        guard let date = self.convertToDate() else {
+            return nil
+        }
+        return dateFormatter.string(from: date)
+    }
+}

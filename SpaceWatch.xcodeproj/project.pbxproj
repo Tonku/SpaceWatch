@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7455737B29D6B53F00E2A55B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455737A29D6B53F00E2A55B /* AppDelegate.swift */; };
+		7455737D29D6B53F00E2A55B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455737C29D6B53F00E2A55B /* SceneDelegate.swift */; };
+		7455738429D6B54000E2A55B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7455738329D6B54000E2A55B /* Assets.xcassets */; };
+		7455738729D6B54000E2A55B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7455738529D6B54000E2A55B /* LaunchScreen.storyboard */; };
+		7455739229D6B54000E2A55B /* SpaceWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455739129D6B54000E2A55B /* SpaceWatchTests.swift */; };
+		7455739C29D6B54000E2A55B /* SpaceWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455739B29D6B54000E2A55B /* SpaceWatchUITests.swift */; };
+		7455739E29D6B54000E2A55B /* SpaceWatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455739D29D6B54000E2A55B /* SpaceWatchUITestsLaunchTests.swift */; };
+		745573AB29D79D0500E2A55B /* MasterCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573AA29D79D0500E2A55B /* MasterCordinator.swift */; };
+		745573B229D79E4200E2A55B /* AstronautListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573B129D79E4200E2A55B /* AstronautListProtocols.swift */; };
+		745573B429D79FEF00E2A55B /* AstronautListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573B329D79FEF00E2A55B /* AstronautListViewController.swift */; };
+		745573B629D7A03600E2A55B /* AstronautListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573B529D7A03600E2A55B /* AstronautListInteractor.swift */; };
+		745573B829D7A04700E2A55B /* AstronautListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573B729D7A04700E2A55B /* AstronautListPresenter.swift */; };
+		745573BA29D7A05200E2A55B /* AstronautListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573B929D7A05200E2A55B /* AstronautListRouter.swift */; };
+		745573BD29D7A0A000E2A55B /* AstronautDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573BC29D7A0A000E2A55B /* AstronautDetailsViewController.swift */; };
+		745573BF29D7A0AD00E2A55B /* AstronautDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573BE29D7A0AD00E2A55B /* AstronautDetailsPresenter.swift */; };
+		745573C129D7A0B900E2A55B /* AstronautDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573C029D7A0B900E2A55B /* AstronautDetailsInteractor.swift */; };
+		745573C329D7A0C400E2A55B /* AstronautDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573C229D7A0C400E2A55B /* AstronautDetailsRouter.swift */; };
+		745573C529D7A0D800E2A55B /* AstranautDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573C429D7A0D800E2A55B /* AstranautDetailsProtocols.swift */; };
+		745573C829D7A52800E2A55B /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573C729D7A52800E2A55B /* Astronaut.swift */; };
+		745573CB29D7A55700E2A55B /* AstronautDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573CA29D7A55700E2A55B /* AstronautDetails.swift */; };
+		745573CE29D7BF8A00E2A55B /* AstronautTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573CD29D7BF8A00E2A55B /* AstronautTableViewCell.swift */; };
+		745573D029D7C60200E2A55B /* AstronautCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573CF29D7C60200E2A55B /* AstronautCellViewModel.swift */; };
+		745573D429D7DE3F00E2A55B /* AstronautDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573D329D7DE3F00E2A55B /* AstronautDetailsViewModel.swift */; };
+		745573D729D7E93500E2A55B /* AstronautListNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573D629D7E93500E2A55B /* AstronautListNetwork.swift */; };
+		745573DF29D90A8700E2A55B /* astronaut-list.json in Resources */ = {isa = PBXBuildFile; fileRef = 745573DD29D90A2500E2A55B /* astronaut-list.json */; };
+		745573E029D90A8700E2A55B /* AstronautListNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573D829D7E9E700E2A55B /* AstronautListNetworkTests.swift */; };
+		745573E129D90A8700E2A55B /* NetworkMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573DB29D7EA1000E2A55B /* NetworkMocks.swift */; };
+		745573E429D91D4800E2A55B /* AstronautDetailsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573E329D91D4800E2A55B /* AstronautDetailsNetwork.swift */; };
+		745573E729D92DC100E2A55B /* AstronautDetailsNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573E629D92DC100E2A55B /* AstronautDetailsNetworkTests.swift */; };
+		745573E929D98F8100E2A55B /* CellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573E829D98F8100E2A55B /* CellViewModelTests.swift */; };
+		745573EC29DA5AF200E2A55B /* AstronautListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573EB29DA5AF200E2A55B /* AstronautListInteractorTests.swift */; };
+		745573EF29DA88BB00E2A55B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745573EE29DA88BB00E2A55B /* Extensions.swift */; };
+		745573F129DA919600E2A55B /* DetailsStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745573F029DA919600E2A55B /* DetailsStoryBoard.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7455738E29D6B54000E2A55B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7455736F29D6B53F00E2A55B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7455737629D6B53F00E2A55B;
+			remoteInfo = SpaceWatch;
+		};
+		7455739829D6B54000E2A55B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7455736F29D6B53F00E2A55B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7455737629D6B53F00E2A55B;
+			remoteInfo = SpaceWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7455737729D6B53F00E2A55B /* SpaceWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7455737A29D6B53F00E2A55B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7455737C29D6B53F00E2A55B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7455738329D6B54000E2A55B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7455738629D6B54000E2A55B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7455738829D6B54000E2A55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7455738D29D6B54000E2A55B /* SpaceWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7455739129D6B54000E2A55B /* SpaceWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceWatchTests.swift; sourceTree = "<group>"; };
+		7455739729D6B54000E2A55B /* SpaceWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7455739B29D6B54000E2A55B /* SpaceWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceWatchUITests.swift; sourceTree = "<group>"; };
+		7455739D29D6B54000E2A55B /* SpaceWatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceWatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		745573AA29D79D0500E2A55B /* MasterCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterCordinator.swift; sourceTree = "<group>"; };
+		745573B129D79E4200E2A55B /* AstronautListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautListProtocols.swift; sourceTree = "<group>"; };
+		745573B329D79FEF00E2A55B /* AstronautListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautListViewController.swift; sourceTree = "<group>"; };
+		745573B529D7A03600E2A55B /* AstronautListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautListInteractor.swift; sourceTree = "<group>"; };
+		745573B729D7A04700E2A55B /* AstronautListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautListPresenter.swift; sourceTree = "<group>"; };
+		745573B929D7A05200E2A55B /* AstronautListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautListRouter.swift; sourceTree = "<group>"; };
+		745573BC29D7A0A000E2A55B /* AstronautDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailsViewController.swift; sourceTree = "<group>"; };
+		745573BE29D7A0AD00E2A55B /* AstronautDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailsPresenter.swift; sourceTree = "<group>"; };
+		745573C029D7A0B900E2A55B /* AstronautDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailsInteractor.swift; sourceTree = "<group>"; };
+		745573C229D7A0C400E2A55B /* AstronautDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailsRouter.swift; sourceTree = "<group>"; };
+		745573C429D7A0D800E2A55B /* AstranautDetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstranautDetailsProtocols.swift; sourceTree = "<group>"; };
+		745573C729D7A52800E2A55B /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
+		745573CA29D7A55700E2A55B /* AstronautDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetails.swift; sourceTree = "<group>"; };
+		745573CD29D7BF8A00E2A55B /* AstronautTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautTableViewCell.swift; sourceTree = "<group>"; };
+		745573CF29D7C60200E2A55B /* AstronautCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautCellViewModel.swift; sourceTree = "<group>"; };
+		745573D329D7DE3F00E2A55B /* AstronautDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailsViewModel.swift; sourceTree = "<group>"; };
+		745573D629D7E93500E2A55B /* AstronautListNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautListNetwork.swift; sourceTree = "<group>"; };
+		745573D829D7E9E700E2A55B /* AstronautListNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautListNetworkTests.swift; sourceTree = "<group>"; };
+		745573DB29D7EA1000E2A55B /* NetworkMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMocks.swift; sourceTree = "<group>"; };
+		745573DD29D90A2500E2A55B /* astronaut-list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "astronaut-list.json"; sourceTree = "<group>"; };
+		745573E329D91D4800E2A55B /* AstronautDetailsNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailsNetwork.swift; sourceTree = "<group>"; };
+		745573E629D92DC100E2A55B /* AstronautDetailsNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailsNetworkTests.swift; sourceTree = "<group>"; };
+		745573E829D98F8100E2A55B /* CellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelTests.swift; sourceTree = "<group>"; };
+		745573EB29DA5AF200E2A55B /* AstronautListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautListInteractorTests.swift; sourceTree = "<group>"; };
+		745573EE29DA88BB00E2A55B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		745573F029DA919600E2A55B /* DetailsStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsStoryBoard.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7455737429D6B53F00E2A55B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7455738A29D6B54000E2A55B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7455739429D6B54000E2A55B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7455736E29D6B53F00E2A55B = {
+			isa = PBXGroup;
+			children = (
+				7455737929D6B53F00E2A55B /* SpaceWatch */,
+				7455739029D6B54000E2A55B /* SpaceWatchTests */,
+				7455739A29D6B54000E2A55B /* SpaceWatchUITests */,
+				7455737829D6B53F00E2A55B /* Products */,
+				A26B1510E0B20F1236E02E68 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		7455737829D6B53F00E2A55B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7455737729D6B53F00E2A55B /* SpaceWatch.app */,
+				7455738D29D6B54000E2A55B /* SpaceWatchTests.xctest */,
+				7455739729D6B54000E2A55B /* SpaceWatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7455737929D6B53F00E2A55B /* SpaceWatch */ = {
+			isa = PBXGroup;
+			children = (
+				745573ED29DA88A900E2A55B /* Common */,
+				745573AD29D79D9400E2A55B /* Modules */,
+				745573AC29D79D0B00E2A55B /* App */,
+				7455738329D6B54000E2A55B /* Assets.xcassets */,
+				7455738529D6B54000E2A55B /* LaunchScreen.storyboard */,
+				7455738829D6B54000E2A55B /* Info.plist */,
+			);
+			path = SpaceWatch;
+			sourceTree = "<group>";
+		};
+		7455739029D6B54000E2A55B /* SpaceWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				745573EA29DA5ACF00E2A55B /* InteractorTests */,
+				745573E529D92D9B00E2A55B /* ViewModelTests */,
+				745573DA29D7E9F500E2A55B /* Network */,
+				7455739129D6B54000E2A55B /* SpaceWatchTests.swift */,
+			);
+			path = SpaceWatchTests;
+			sourceTree = "<group>";
+		};
+		7455739A29D6B54000E2A55B /* SpaceWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7455739B29D6B54000E2A55B /* SpaceWatchUITests.swift */,
+				7455739D29D6B54000E2A55B /* SpaceWatchUITestsLaunchTests.swift */,
+			);
+			path = SpaceWatchUITests;
+			sourceTree = "<group>";
+		};
+		745573AC29D79D0B00E2A55B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7455737A29D6B53F00E2A55B /* AppDelegate.swift */,
+				7455737C29D6B53F00E2A55B /* SceneDelegate.swift */,
+				745573AA29D79D0500E2A55B /* MasterCordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		745573AD29D79D9400E2A55B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				745573AE29D79D9E00E2A55B /* AstranautList */,
+				745573AF29D79DB300E2A55B /* AstranautDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		745573AE29D79D9E00E2A55B /* AstranautList */ = {
+			isa = PBXGroup;
+			children = (
+				745573D529D7E92700E2A55B /* Network */,
+				745573CC29D7BF4B00E2A55B /* View */,
+				745573C629D7A50B00E2A55B /* Entity */,
+				745573B029D79DFB00E2A55B /* protocols */,
+				745573B529D7A03600E2A55B /* AstronautListInteractor.swift */,
+				745573B729D7A04700E2A55B /* AstronautListPresenter.swift */,
+				745573B929D7A05200E2A55B /* AstronautListRouter.swift */,
+			);
+			path = AstranautList;
+			sourceTree = "<group>";
+		};
+		745573AF29D79DB300E2A55B /* AstranautDetails */ = {
+			isa = PBXGroup;
+			children = (
+				745573E229D91D2E00E2A55B /* Network */,
+				745573D229D7DE2200E2A55B /* View */,
+				745573C929D7A54700E2A55B /* Entity */,
+				745573BB29D7A06900E2A55B /* protocols */,
+				745573BE29D7A0AD00E2A55B /* AstronautDetailsPresenter.swift */,
+				745573C029D7A0B900E2A55B /* AstronautDetailsInteractor.swift */,
+				745573C229D7A0C400E2A55B /* AstronautDetailsRouter.swift */,
+			);
+			path = AstranautDetails;
+			sourceTree = "<group>";
+		};
+		745573B029D79DFB00E2A55B /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				745573B129D79E4200E2A55B /* AstronautListProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		745573BB29D7A06900E2A55B /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				745573C429D7A0D800E2A55B /* AstranautDetailsProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		745573C629D7A50B00E2A55B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				745573C729D7A52800E2A55B /* Astronaut.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		745573C929D7A54700E2A55B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				745573CA29D7A55700E2A55B /* AstronautDetails.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		745573CC29D7BF4B00E2A55B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				745573B329D79FEF00E2A55B /* AstronautListViewController.swift */,
+				745573CD29D7BF8A00E2A55B /* AstronautTableViewCell.swift */,
+				745573CF29D7C60200E2A55B /* AstronautCellViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		745573D229D7DE2200E2A55B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				745573BC29D7A0A000E2A55B /* AstronautDetailsViewController.swift */,
+				745573D329D7DE3F00E2A55B /* AstronautDetailsViewModel.swift */,
+				745573F029DA919600E2A55B /* DetailsStoryBoard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		745573D529D7E92700E2A55B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				745573D629D7E93500E2A55B /* AstronautListNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		745573DA29D7E9F500E2A55B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				745573DD29D90A2500E2A55B /* astronaut-list.json */,
+				745573D829D7E9E700E2A55B /* AstronautListNetworkTests.swift */,
+				745573DB29D7EA1000E2A55B /* NetworkMocks.swift */,
+				745573E629D92DC100E2A55B /* AstronautDetailsNetworkTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		745573E229D91D2E00E2A55B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				745573E329D91D4800E2A55B /* AstronautDetailsNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		745573E529D92D9B00E2A55B /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				745573E829D98F8100E2A55B /* CellViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		745573EA29DA5ACF00E2A55B /* InteractorTests */ = {
+			isa = PBXGroup;
+			children = (
+				745573EB29DA5AF200E2A55B /* AstronautListInteractorTests.swift */,
+			);
+			path = InteractorTests;
+			sourceTree = "<group>";
+		};
+		745573ED29DA88A900E2A55B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				745573EE29DA88BB00E2A55B /* Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A26B1510E0B20F1236E02E68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7455737629D6B53F00E2A55B /* SpaceWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 745573A129D6B54000E2A55B /* Build configuration list for PBXNativeTarget "SpaceWatch" */;
+			buildPhases = (
+				7455737329D6B53F00E2A55B /* Sources */,
+				7455737429D6B53F00E2A55B /* Frameworks */,
+				7455737529D6B53F00E2A55B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceWatch;
+			productName = SpaceWatch;
+			productReference = 7455737729D6B53F00E2A55B /* SpaceWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7455738C29D6B54000E2A55B /* SpaceWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 745573A429D6B54000E2A55B /* Build configuration list for PBXNativeTarget "SpaceWatchTests" */;
+			buildPhases = (
+				7455738929D6B54000E2A55B /* Sources */,
+				7455738A29D6B54000E2A55B /* Frameworks */,
+				7455738B29D6B54000E2A55B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7455738F29D6B54000E2A55B /* PBXTargetDependency */,
+			);
+			name = SpaceWatchTests;
+			productName = SpaceWatchTests;
+			productReference = 7455738D29D6B54000E2A55B /* SpaceWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7455739629D6B54000E2A55B /* SpaceWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 745573A729D6B54000E2A55B /* Build configuration list for PBXNativeTarget "SpaceWatchUITests" */;
+			buildPhases = (
+				7455739329D6B54000E2A55B /* Sources */,
+				7455739429D6B54000E2A55B /* Frameworks */,
+				7455739529D6B54000E2A55B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7455739929D6B54000E2A55B /* PBXTargetDependency */,
+			);
+			name = SpaceWatchUITests;
+			productName = SpaceWatchUITests;
+			productReference = 7455739729D6B54000E2A55B /* SpaceWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7455736F29D6B53F00E2A55B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					7455737629D6B53F00E2A55B = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					7455738C29D6B54000E2A55B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 7455737629D6B53F00E2A55B;
+					};
+					7455739629D6B54000E2A55B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 7455737629D6B53F00E2A55B;
+					};
+				};
+			};
+			buildConfigurationList = 7455737229D6B53F00E2A55B /* Build configuration list for PBXProject "SpaceWatch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7455736E29D6B53F00E2A55B;
+			productRefGroup = 7455737829D6B53F00E2A55B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7455737629D6B53F00E2A55B /* SpaceWatch */,
+				7455738C29D6B54000E2A55B /* SpaceWatchTests */,
+				7455739629D6B54000E2A55B /* SpaceWatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7455737529D6B53F00E2A55B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745573F129DA919600E2A55B /* DetailsStoryBoard.storyboard in Resources */,
+				7455738729D6B54000E2A55B /* LaunchScreen.storyboard in Resources */,
+				7455738429D6B54000E2A55B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7455738B29D6B54000E2A55B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745573DF29D90A8700E2A55B /* astronaut-list.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7455739529D6B54000E2A55B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7455737329D6B53F00E2A55B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745573B429D79FEF00E2A55B /* AstronautListViewController.swift in Sources */,
+				745573B629D7A03600E2A55B /* AstronautListInteractor.swift in Sources */,
+				745573C129D7A0B900E2A55B /* AstronautDetailsInteractor.swift in Sources */,
+				745573D429D7DE3F00E2A55B /* AstronautDetailsViewModel.swift in Sources */,
+				745573BA29D7A05200E2A55B /* AstronautListRouter.swift in Sources */,
+				745573C529D7A0D800E2A55B /* AstranautDetailsProtocols.swift in Sources */,
+				745573B229D79E4200E2A55B /* AstronautListProtocols.swift in Sources */,
+				7455737B29D6B53F00E2A55B /* AppDelegate.swift in Sources */,
+				745573C329D7A0C400E2A55B /* AstronautDetailsRouter.swift in Sources */,
+				745573AB29D79D0500E2A55B /* MasterCordinator.swift in Sources */,
+				745573CB29D7A55700E2A55B /* AstronautDetails.swift in Sources */,
+				745573B829D7A04700E2A55B /* AstronautListPresenter.swift in Sources */,
+				745573D729D7E93500E2A55B /* AstronautListNetwork.swift in Sources */,
+				745573EF29DA88BB00E2A55B /* Extensions.swift in Sources */,
+				745573D029D7C60200E2A55B /* AstronautCellViewModel.swift in Sources */,
+				745573CE29D7BF8A00E2A55B /* AstronautTableViewCell.swift in Sources */,
+				745573BF29D7A0AD00E2A55B /* AstronautDetailsPresenter.swift in Sources */,
+				7455737D29D6B53F00E2A55B /* SceneDelegate.swift in Sources */,
+				745573C829D7A52800E2A55B /* Astronaut.swift in Sources */,
+				745573BD29D7A0A000E2A55B /* AstronautDetailsViewController.swift in Sources */,
+				745573E429D91D4800E2A55B /* AstronautDetailsNetwork.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7455738929D6B54000E2A55B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745573E929D98F8100E2A55B /* CellViewModelTests.swift in Sources */,
+				745573E729D92DC100E2A55B /* AstronautDetailsNetworkTests.swift in Sources */,
+				745573E029D90A8700E2A55B /* AstronautListNetworkTests.swift in Sources */,
+				745573E129D90A8700E2A55B /* NetworkMocks.swift in Sources */,
+				745573EC29DA5AF200E2A55B /* AstronautListInteractorTests.swift in Sources */,
+				7455739229D6B54000E2A55B /* SpaceWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7455739329D6B54000E2A55B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7455739C29D6B54000E2A55B /* SpaceWatchUITests.swift in Sources */,
+				7455739E29D6B54000E2A55B /* SpaceWatchUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7455738F29D6B54000E2A55B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7455737629D6B53F00E2A55B /* SpaceWatch */;
+			targetProxy = 7455738E29D6B54000E2A55B /* PBXContainerItemProxy */;
+		};
+		7455739929D6B54000E2A55B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7455737629D6B53F00E2A55B /* SpaceWatch */;
+			targetProxy = 7455739829D6B54000E2A55B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7455738529D6B54000E2A55B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7455738629D6B54000E2A55B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7455739F29D6B54000E2A55B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		745573A029D6B54000E2A55B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		745573A229D6B54000E2A55B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3M7JK32VW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.SpaceWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		745573A329D6B54000E2A55B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3M7JK32VW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.SpaceWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		745573A529D6B54000E2A55B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3M7JK32VW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.SpaceWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpaceWatch";
+			};
+			name = Debug;
+		};
+		745573A629D6B54000E2A55B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3M7JK32VW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.SpaceWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpaceWatch";
+			};
+			name = Release;
+		};
+		745573A829D6B54000E2A55B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3M7JK32VW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.SpaceWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpaceWatch;
+			};
+			name = Debug;
+		};
+		745573A929D6B54000E2A55B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3M7JK32VW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.SpaceWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpaceWatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7455737229D6B53F00E2A55B /* Build configuration list for PBXProject "SpaceWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7455739F29D6B54000E2A55B /* Debug */,
+				745573A029D6B54000E2A55B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		745573A129D6B54000E2A55B /* Build configuration list for PBXNativeTarget "SpaceWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745573A229D6B54000E2A55B /* Debug */,
+				745573A329D6B54000E2A55B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		745573A429D6B54000E2A55B /* Build configuration list for PBXNativeTarget "SpaceWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745573A529D6B54000E2A55B /* Debug */,
+				745573A629D6B54000E2A55B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		745573A729D6B54000E2A55B /* Build configuration list for PBXNativeTarget "SpaceWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745573A829D6B54000E2A55B /* Debug */,
+				745573A929D6B54000E2A55B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7455736F29D6B53F00E2A55B /* Project object */;
+}

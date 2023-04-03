@@ -26,4 +26,7 @@ SpaceWatch supports all device orientations. The app adjusts its layout based on
 
 To install SpaceWatch, simply download the project and open it in Xcode. You can then build and run the app on your iOS 14 device or simulator.
 
+## API access
+
+The server some times put rate limit. If experienced that I have hosted the astronaut list json and a single details json on cloudflare, to use that just use the commented out url in Networking files (AstronautListNetwork and AstronautDetailsNetwork)
 
